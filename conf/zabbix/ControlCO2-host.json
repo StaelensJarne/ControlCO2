@@ -1,0 +1,72 @@
+{
+    "zabbix_export": {
+        "version": "6.4",
+        "host_groups": [
+            {
+                "uuid": "a571c0d144b14fd4a87a9d9b2aa9fcd6",
+                "name": "Applications"
+            }
+        ],
+        "hosts": [
+            {
+                "host": "ControlCO2",
+                "name": "ControlCO2",
+                "groups": [
+                    {
+                        "name": "Applications"
+                    }
+                ],
+                "items": [
+                    {
+                        "name": "CO2",
+                        "type": "ZABBIX_ACTIVE",
+                        "key": "mqtt.get[\"192.168.0.227:1883\",\"CO2\"]",
+                        "delay": "0",
+                        "units": "ppm",
+                        "preprocessing": [
+                            {
+                                "type": "JSONPATH",
+                                "parameters": [
+                                    "$.value"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Humdity",
+                        "type": "ZABBIX_ACTIVE",
+                        "key": "mqtt.get[\"192.168.0.227:1883\",\"Humidity\"]",
+                        "delay": "0",
+                        "value_type": "FLOAT",
+                        "units": "%R.H.",
+                        "preprocessing": [
+                            {
+                                "type": "JSONPATH",
+                                "parameters": [
+                                    "$.value"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Temperature",
+                        "type": "ZABBIX_ACTIVE",
+                        "key": "mqtt.get[\"192.168.0.227:1883\",\"Temperature\"]",
+                        "delay": "0",
+                        "value_type": "FLOAT",
+                        "units": "\u00b0C",
+                        "preprocessing": [
+                            {
+                                "type": "JSONPATH",
+                                "parameters": [
+                                    "$.value"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "inventory_mode": "DISABLED"
+            }
+        ]
+    }
+}
