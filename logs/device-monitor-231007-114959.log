@@ -1,0 +1,41 @@
+983,24.10,62.20
+CO2 {"variable":"CO2","value":983,"unit":"ppm"}
+Temperature {"variable":"temperature","value":24.10000038,"unit":"C"}
+Humidity {"variable":"humidity","value":62.20000076,"unit":"%R.H."}
+962,24.30,61.90
+CO2 {"variable":"CO2","value":962,"unit":"ppm"}
+Temperature {"variable":"temperature","value":24.29999924,"unit":"C"}
+Humidity {"variable":"humidity","value":61.90000153,"unit":"%R.H."}
+958,24.40,61.80
+CO2 {"variable":"CO2","value":958,"unit":"ppm"}
+Temperature {"variable":"temperature","value":24.39999962,"unit":"C"}
+Humidity {"variable":"humidity","value":61.79999924,"unit":"%R.H."}
+970,24.50,61.50
+CO2 {"variable":"CO2","value":970,"unit":"ppm"}
+Temperature {"variable":"temperature","value":24.5,"unit":"C"}
+Humidity {"variable":"humidity","value":61.5,"unit":"%R.H."}
+988,24.70,61.10
+CO2 {"variable":"CO2","value":988,"unit":"ppm"}
+Temperature {"variable":"temperature","value":24.70000076,"unit":"C"}
+Humidity {"variable":"humidity","value":61.09999847,"unit":"%R.H."}
+980,24.80,60.80
+CO2 {"variable":"CO2","value":980,"unit":"ppm"}
+Temperature {"variable":"temperature","value":24.79999924,"unit":"C"}
+Humidity {"variable":"humidity","value":60.79999924,"unit":"%R.H."}
+983,25.00,60.40
+CO2 {"variable":"CO2","value":983,"unit":"ppm"}
+Temperature {"variable":"temperature","value":25,"unit":"C"}
+Humidity {"variable":"humidity","value":60.40000153,"unit":"%R.H."}
+988,25.10,60.20
+CO2 {"variable":"CO2","value":988,"unit":"ppm"}
+Temperature {"variable":"temperature","value":25.10000038,"unit":"C"}
+Humidity {"variable":"humidity","value":60.20000076,"unit":"%R.H."}
+1019,25.20,60.30
+CO2 {"variable":"CO2","value":1019,"unit":"ppm"}
+Temperature {"variable":"temperature","value":25.20000076,"unit":"C"}
+Humidity {"variable":"humidity","value":60.29999924,"unit":"%R.H."}
+987,25.20,59.60
+CO2 {"variable":"CO2","value":987,"unit":"ppm"}
+Temperature {"variable":"temperature","value":25.20000076,"unit":"C"}
+Humidity {"variable":"humidity","value":59.59999847,"unit":"%R.H."}
+[772857][D][WiFiClient.cpp:545] connected(): Disconnected: RES: 0, ERR: 128

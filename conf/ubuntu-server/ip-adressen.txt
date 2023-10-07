@@ -1,4 +1,0 @@
-frontend => mqtt item keys (3 items)
-zabbix_agent2.conf => Server en ServerActive
-zabbix_agentd.conf => Server en ServerActive
-mosquitto.conf => listener
