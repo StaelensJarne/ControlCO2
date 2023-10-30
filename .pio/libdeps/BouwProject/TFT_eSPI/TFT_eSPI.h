@@ -16,7 +16,7 @@
 #ifndef _TFT_eSPIH_
 #define _TFT_eSPIH_
 
-#define TFT_ESPI_VERSION "2.5.31"
+#define TFT_ESPI_VERSION "2.5.33"
 
 // Bit level feature flags
 // Bit 0 set: viewport capability
@@ -29,8 +29,9 @@
 //Standard support
 #include <Arduino.h>
 #include <Print.h>
-#include <SPI.h>
-
+#if !defined (TFT_PARALLEL_8_BIT) && !defined (RP2040_PIO_INTERFACE)
+  #include <SPI.h>
+#endif
 /***************************************************************************************
 **                         Section 2: Load library and processor specific header files
 ***************************************************************************************/
@@ -731,12 +732,8 @@ class TFT_eSPI : public Print { friend class TFT_eSprite; // Sprite class has ac
            // Alpha blend 2 colours, see generic "alphaBlend_Test" example
            // alpha =   0 = 100% background colour
            // alpha = 255 = 100% foreground colour
-#ifdef STM32
   uint16_t alphaBlend(uint8_t alpha, uint16_t fgc, uint16_t bgc);
-#else
-  inline
-  uint16_t alphaBlend(uint8_t alpha, uint16_t fgc, uint16_t bgc);
-#endif
+
            // 16 bit colour alphaBlend with alpha dither (dither reduces colour banding)
   uint16_t alphaBlend(uint8_t alpha, uint16_t fgc, uint16_t bgc, uint8_t dither);
            // 24 bit colour alphaBlend with optional alpha dither
@@ -823,8 +820,9 @@ class TFT_eSPI : public Print { friend class TFT_eSprite; // Sprite class has ac
   bool     verifySetupID(uint32_t id);
 
   // Global variables
+#if !defined (TFT_PARALLEL_8_BIT) && !defined (RP2040_PIO_INTERFACE)
   static   SPIClass& getSPIinstance(void); // Get SPI class handle
-
+#endif
   uint32_t textcolor, textbgcolor;         // Text foreground and background colours
 
   uint32_t bitmap_fg, bitmap_bg;           // Bitmap foreground (bit=1) and background (bit=0) colours
@@ -986,6 +984,20 @@ class TFT_eSPI : public Print { friend class TFT_eSprite; // Sprite class has ac
 // Swap any type
 template <typename T> static inline void
 transpose(T& a, T& b) { T t = a; a = b; b = t; }
+
+// Fast alphaBlend
+template <typename A, typename F, typename B> static inline uint16_t
+fastBlend(A alpha, F fgc, B bgc)
+{
+  // Split out and blend 5 bit red and blue channels
+  uint32_t rxb = bgc & 0xF81F;
+  rxb += ((fgc & 0xF81F) - rxb) * (alpha >> 2) >> 6;
+  // Split out and blend 6 bit green channel
+  uint32_t xgx = bgc & 0x07E0;
+  xgx += ((fgc & 0x07E0) - xgx) * alpha >> 8;
+  // Recombine channels
+  return (rxb & 0xF81F) | (xgx & 0x07E0);
+}
 
 /***************************************************************************************
 **                         Section 10: Additional extension classes
