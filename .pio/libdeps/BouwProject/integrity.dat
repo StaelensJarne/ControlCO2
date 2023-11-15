@@ -1,6 +1,6 @@
-wifwaf/MH-Z19@^1.5.4
-bblanchon/ArduinoJson@^6.21.3
-256dpi/MQTT@^2.5.1
-juerd/ESP-WiFiSettings@^3.8.0
-bodmer/TFT_eSPI@^2.5.31
 adafruit/DHT sensor library@^1.4.4
+bodmer/TFT_eSPI@^2.5.31
+juerd/ESP-WiFiSettings@^3.8.0
+wifwaf/MH-Z19@^1.5.4
+256dpi/MQTT@^2.5.1
+bblanchon/ArduinoJson@^6.21.3

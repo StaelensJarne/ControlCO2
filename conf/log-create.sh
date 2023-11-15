@@ -36,4 +36,7 @@ chown -R thingsboard:thingsboard thingsboard
 # thingsboard\thingsboard.log
 
 # mosquitto.service (service maakt map en logfiles automatisch aan)
+mkdir moqquitto
+touch mosquitto\mosquitto.log
+chown -R mosquitto:mosquitto mosquitto
 # mosquitto\mosquitto.log

@@ -1,0 +1,57 @@
+1899,20.60,68.20
+[126117][I][WiFiClient.cpp:253] connect(): select returned due to timeout 3000 ms for fd 49
+CO2 {"variable":"CO2","value":1899,"unit":"ppm"}
+Temperature {"variable":"temperature","value":20.60000038,"unit":"C"}
+Humidity {"variable":"humidity","value":68.19999695,"unit":"%R.H."}
+1899,20.60,68.00
+[191719][I][WiFiClient.cpp:253] connect(): select returned due to timeout 3000 ms for fd 49
+CO2 {"variable":"CO2","value":1899,"unit":"ppm"}
+Temperature {"variable":"temperature","value":20.60000038,"unit":"C"}
+Humidity {"variable":"humidity","value":68,"unit":"%R.H."}
+[202770][V][WiFiServer.h:42] WiFiServer(): WiFiServer::WiFiServer(port=80, ...)
+[202771][V][WebServer.cpp:87] WebServer(): WebServer::Webserver(port=80)
+[202869][V][WiFiGeneric.cpp:362] _arduino_event_cb(): STA Disconnected: SSID: , BSSID: a4:2b:b0:c3:d1:3a, Reason: 8
+[202871][D][WiFiGeneric.cpp:1035] _eventCallback(): Arduino Event: 5 - STA_DISCONNECTED
+[202874][V][WiFiGeneric.cpp:343] _arduino_event_cb(): STA Stopped
+[202877][W][WiFiGeneric.cpp:1057] _eventCallback(): Reason: 8 - ASSOC_LEAVE
+[202890][D][WiFiGeneric.cpp:1035] _eventCallback(): Arduino Event: 3 - STA_STOP
+Starting access point for configuration portal.
+SSID: 'operame-3ce41d', Password: 'MijnPasswoord'
+[202930][D][WiFiGeneric.cpp:1035] _eventCallback(): Arduino Event: 0 - WIFI_READY
+[202938][V][WiFiGeneric.cpp:392] _arduino_event_cb(): AP Started
+[202943][D][WiFiGeneric.cpp:1035] _eventCallback(): Arduino Event: 10 - AP_START
+[203514][V][WiFiGeneric.cpp:395] _arduino_event_cb(): AP Stopped
+[203515][D][WiFiGeneric.cpp:1035] _eventCallback(): Arduino Event: 11 - AP_STOP
+[203515][V][WiFiGeneric.cpp:392] _arduino_event_cb(): AP Started
+[203522][D][WiFiGeneric.cpp:1035] _eventCallback(): Arduino Event: 10 - AP_START
+[204013][W][ArduinoOTA.cpp:114] begin(): already initialized
+192.168.4.1
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+[     8][D][esp32-hal-cpu.c:244] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+Operame / www.controlCO2.space start
+Using MHZ driver.
+[  6066][D][WiFiGeneric.cpp:1035] _eventCallback(): Arduino Event: 0 - WIFI_READY
+[  6172][V][WiFiGeneric.cpp:340] _arduino_event_cb(): STA Started
+[  6174][D][WiFiGeneric.cpp:1035] _eventCallback(): Arduino Event: 2 - STA_START
+Connecting to WiFi SSID telenet-179E0[  6287][V][WiFiGeneric.cpp:97] set_esp_interface_ip(): Configuring Station static IP: 0.0.0.0, MASK: 0.0.0.0, GW: 0.0.0.0
+......[  6914][V][WiFiGeneric.cpp:355] _arduino_event_cb(): STA Connected: SSID: telenet-179E0, BSSID: a4:2b:b0:c3:d1:3a, Channel: 1, Auth: WPA_WPA2_PSK
+[  6917][D][WiFiGeneric.cpp:1035] _eventCallback(): Arduino Event: 4 - STA_CONNECTED
+.....[  7388][V][WiFiGeneric.cpp:369] _arduino_event_cb(): STA Got New IP:192.168.0.114
+[  7389][D][WiFiGeneric.cpp:1035] _eventCallback(): Arduino Event: 7 - STA_GOT_IP
+[  7392][D][WiFiGeneric.cpp:1098] _eventCallback(): STA IP: 192.168.0.114, MASK: 255.255.255.0, GW: 192.168.0.1
+192.168.0.114
+[  7453][I][ArduinoOTA.cpp:141] begin(): OTA server at: operame-3ce41d.local:3232
+1909,20.60,67.90
+[ 63075][I][WiFiClient.cpp:253] connect(): select returned due to timeout 3000 ms for fd 49
+CO2 {"variable":"CO2","value":1909,"unit":"ppm"}
+Temperature {"variable":"temperature","value":20.60000038,"unit":"C"}
+Humidity {"variable":"humidity","value":67.90000153,"unit":"%R.H."}
