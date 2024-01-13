@@ -1,6 +1,0 @@
-Om DB console te krijgen:
-sudo -u postgres -i of psql -U postgres -d postgres -h 127.0.0.1 -W
-psql
-\l
-\l+
-SELECT datname FROM pg_database;

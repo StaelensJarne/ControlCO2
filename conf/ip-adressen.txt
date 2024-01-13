@@ -1,4 +1,7 @@
+Mobile hotspot op GSM:
+( AndroidAP33EF - test1233 )
+Dan heb je vb dit adress: 192.168.43.172
+
 frontend => mqtt item keys (3 items)
-zabbix_agent2.conf => Server en ServerActive
-zabbix_agentd.conf => Server en ServerActive
-mosquitto.conf => listener
+zabbix_agent2.conf => Server, ListenIP en ServerActive parameters
+mosquitto.conf => listener parameter
