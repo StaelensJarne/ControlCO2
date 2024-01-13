@@ -8,7 +8,7 @@ Dit omdat de meest recente varsie van zabbix voor bullseye is.
 
 Om in te loggen op de desktopomgeving is RealVNC Viewer gebruikt.
 
-Het IP adress van de vorige Dojo was 10.3.6.156.
+Het IP adress van de vorige Dojo was 10.3.6.158.
 
 Dit moet je op de volgende plaatsen instellen om dit te laten werken.
 
@@ -19,3 +19,5 @@ In /etc/mosquitto.conf (listener (poort niet veranderen, maar wel IP-adress))
 In de web interface van zabbix (de items CO2, Tempreature en Humidity)
 
 En op het configuratie portaal van de CO2 sensor (mqtt broker).
+
+SSH connectie via putty: jarne@raspberrypi.local
