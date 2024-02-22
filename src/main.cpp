@@ -1,3 +1,4 @@
+/*
 #include <SPI.h>
 #include <WiFi.h>
 
@@ -38,3 +39,4 @@ void setup() {
 void loop() {
 
 }
+*/

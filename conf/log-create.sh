@@ -40,3 +40,5 @@ mkdir moqquitto
 touch mosquitto\mosquitto.log
 chown -R mosquitto:mosquitto mosquitto
 # mosquitto\mosquitto.log
+# Extra rechten zetten om dit via het dashboard van zabbix uit te kunnen lezen
+sudo chmod a+rx -R /var/log/mosquitto

@@ -289,6 +289,8 @@ void connect_mqtt() {
 
     static int failures = 0;
     if( mqtt_user_pass_enabled ) {
+        Serial.print("In connect_mqtt: ");
+        Serial.println(WiFiSettings.hostname.c_str());
         if (mqtt.connect(WiFiSettings.hostname.c_str(), mqtt_username.c_str(), mqtt_password.c_str())) {
             failures = 0;
 	    display_big("MQTT connect");
