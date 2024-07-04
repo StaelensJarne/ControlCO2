@@ -1,8 +1,0 @@
-PidFile=/var/run/zabbix/zabbix_agent2.pid
-LogFile=/var/log/zabbix/zabbix_agent2.log
-LogFileSize=0
-Server=192.168.0.156
-ListenIP=192.168.0.156
-ServerActive=192.168.0.156
-Hostname=ControlCO2
-Include=./zabbix_agent2.d/plugins.d/*.conf

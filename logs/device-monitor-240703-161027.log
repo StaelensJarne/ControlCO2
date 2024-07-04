@@ -1,0 +1,68 @@
+1439,27.20,50.30
+CO2 {"variable":"CO2","value":1439,"unit":"ppm"}
+Temperature {"variable":"temperature","value":27.20000076,"unit":"C"}
+Humidity {"variable":"humidity","value":50.29999924,"unit":"%R.H."}
+1368,27.00,50.80
+CO2 {"variable":"CO2","value":1368,"unit":"ppm"}
+Temperature {"variable":"temperature","value":27,"unit":"C"}
+Humidity {"variable":"humidity","value":50.79999924,"unit":"%R.H."}
+1352,26.70,51.20
+CO2 {"variable":"CO2","value":1352,"unit":"ppm"}
+Temperature {"variable":"temperature","value":26.70000076,"unit":"C"}
+Humidity {"variable":"humidity","value":51.20000076,"unit":"%R.H."}
+1352,26.60,51.70
+CO2 {"variable":"CO2","value":1352,"unit":"ppm"}
+Temperature {"variable":"temperature","value":26.60000038,"unit":"C"}
+Humidity {"variable":"humidity","value":51.70000076,"unit":"%R.H."}
+1359,26.60,51.70
+CO2 {"variable":"CO2","value":1359,"unit":"ppm"}
+Temperature {"variable":"temperature","value":26.60000038,"unit":"C"}
+Humidity {"variable":"humidity","value":51.70000076,"unit":"%R.H."}
+1369,26.60,51.80
+CO2 {"variable":"CO2","value":1369,"unit":"ppm"}
+Temperature {"variable":"temperature","value":26.60000038,"unit":"C"}
+Humidity {"variable":"humidity","value":51.79999924,"unit":"%R.H."}
+1382,26.60,51.80
+CO2 {"variable":"CO2","value":1382,"unit":"ppm"}
+Temperature {"variable":"temperature","value":26.60000038,"unit":"C"}
+Humidity {"variable":"humidity","value":51.79999924,"unit":"%R.H."}
+1386,26.70,51.80
+CO2 {"variable":"CO2","value":1386,"unit":"ppm"}
+Temperature {"variable":"temperature","value":26.70000076,"unit":"C"}
+Humidity {"variable":"humidity","value":51.79999924,"unit":"%R.H."}
+1390,26.70,51.60
+CO2 {"variable":"CO2","value":1390,"unit":"ppm"}
+Temperature {"variable":"temperature","value":26.70000076,"unit":"C"}
+Humidity {"variable":"humidity","value":51.59999847,"unit":"%R.H."}
+1398,26.70,51.50
+CO2 {"variable":"CO2","value":1398,"unit":"ppm"}
+Temperature {"variable":"temperature","value":26.70000076,"unit":"C"}
+Humidity {"variable":"humidity","value":51.5,"unit":"%R.H."}
+1403,26.70,51.40
+CO2 {"variable":"CO2","value":1403,"unit":"ppm"}
+Temperature {"variable":"temperature","value":26.70000076,"unit":"C"}
+Humidity {"variable":"humidity","value":51.40000153,"unit":"%R.H."}
+1407,26.80,51.40
+CO2 {"variable":"CO2","value":1407,"unit":"ppm"}
+Temperature {"variable":"temperature","value":26.79999924,"unit":"C"}
+Humidity {"variable":"humidity","value":51.40000153,"unit":"%R.H."}
+1419,26.80,51.40
+CO2 {"variable":"CO2","value":1419,"unit":"ppm"}
+Temperature {"variable":"temperature","value":26.79999924,"unit":"C"}
+Humidity {"variable":"humidity","value":51.40000153,"unit":"%R.H."}
+1435,26.90,51.30
+CO2 {"variable":"CO2","value":1435,"unit":"ppm"}
+Temperature {"variable":"temperature","value":26.89999962,"unit":"C"}
+Humidity {"variable":"humidity","value":51.29999924,"unit":"%R.H."}
+1433,26.90,51.20
+CO2 {"variable":"CO2","value":1433,"unit":"ppm"}
+Temperature {"variable":"temperature","value":26.89999962,"unit":"C"}
+Humidity {"variable":"humidity","value":51.20000076,"unit":"%R.H."}
+1435,27.00,51.20
+CO2 {"variable":"CO2","value":1435,"unit":"ppm"}
+Temperature {"variable":"temperature","value":27,"unit":"C"}
+Humidity {"variable":"humidity","value":51.20000076,"unit":"%R.H."}
+1453,27.00,51.20
+CO2 {"variable":"CO2","value":1453,"unit":"ppm"}
+Temperature {"variable":"temperature","value":27,"unit":"C"}
+Humidity {"variable":"humidity","value":51.20000076,"unit":"%R.H."}
